@@ -1,0 +1,8 @@
+<button
+	type="button"
+	(click)="toggleTheme()"
+	class="{{ body.getAttribute('color-scheme') === 'light' ? 'light-theme-button' : 'dark-theme-button' }}"
+	attr.aria-label="{{ body.getAttribute('color-scheme') === 'light' ? 'Switch to dark theme' : 'Switch to light theme' }}"
+	title="{{ body.getAttribute('color-scheme') === 'light' ? 'Switch to dark theme' : 'Switch to light theme' }}">
+	<mat-icon>{{ body.getAttribute("color-scheme") === "light" ? "wb_sunny" : "brightness_2" }}</mat-icon>
+</button>

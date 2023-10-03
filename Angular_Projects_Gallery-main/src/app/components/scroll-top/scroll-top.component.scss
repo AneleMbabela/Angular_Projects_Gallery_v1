@@ -1,0 +1,25 @@
+:host {
+	.scroll-top-button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1rem;
+		border-radius: 10px;
+		box-shadow: var(--shadow1);
+		cursor: pointer;
+		transition: 0.2s;
+		background-color: var(--cibg2);
+		opacity: 1;
+		pointer-events: all;
+
+		&:hover,
+		&:focus {
+			transform: scale(0.9);
+		}
+
+		&.invisible {
+			opacity: 0;
+			pointer-events: none;
+		}
+	}
+}
